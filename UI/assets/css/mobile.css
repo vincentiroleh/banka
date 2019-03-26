@@ -1,0 +1,18 @@
+@import 'style.css';
+
+/*MEDIA QUERY*/
+@media only screen and (max-width: 600px) {
+  .fixed-header {
+    background-color: var(--color-blue);
+    border-bottom: 5px var(--color-green) solid;
+  }
+
+  .hero-content {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+
+  .container {
+    
+  }
+}
