@@ -1,6 +1,8 @@
 /* Import other css files */
-@import url('../css/mobile.css');
-@import url('../css/layout.css');
+@import url('./mobile.css');
+@import url('./layout.css');
+@import url('./login.css');
+
 
 :root {
   --main-bg-color: #F6F6F6;
@@ -11,6 +13,9 @@
   --display-block: block;
 }
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   padding: 0;
@@ -130,6 +135,14 @@ button {
   margin-bottom: 12px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.b-radius {
+  border-radius: 50px;
+}
+
 .sticky-footer {
   height: 10rem;
   width: 100%;
@@ -169,7 +182,7 @@ button {
 }
 
 .m-large {
-  margin: 50px 0;
+  margin: 50px;
 }
 
 .m-t-large {
@@ -180,7 +193,7 @@ button {
   margin-right: 50px;
 }
 
-.m-right {
+.m-left {
   margin-left: 50px;
 }
 
@@ -190,4 +203,8 @@ button {
 
 .float-right {
   float: right;
+}
+
+.w-full {
+  width: 100%;
 }
