@@ -6,14 +6,14 @@
   width: 100%;
 }
 
-.card-col-4 {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-rows: auto;
-}
-
 .card-col-1 {
   display: grid;
   grid-template-columns: repeat(auto-fit);
+  grid-template-rows: auto;
+}
+
+.card-col-4 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   grid-template-rows: auto;
 }

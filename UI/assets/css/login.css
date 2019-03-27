@@ -1,0 +1,36 @@
+.sign-form {
+  margin: 10% 20%;
+}
+
+#form-switch,
+#register-form,
+#form-switch:checked~#login-form {
+  display: none;
+}
+
+#form-switch:checked~#register-form {
+  display: block;
+}
+
+.sign-form form {
+  border: 1px solid #78B945;
+  margin: 20px 0;
+  padding: 10px;
+}
+
+.sign-form input[type=text],
+.sign-form input[type=password],
+.sign-form input[type=email] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #0E237E;
+  box-sizing: border-box;
+}
+
+.form-button {
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
