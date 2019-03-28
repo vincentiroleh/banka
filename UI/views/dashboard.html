@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Banka -User Dashboard</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <header class="grid-container">
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars header__menu"></i>
+    </div>
+
+    <header class="header">
+      <div class="header__account white s-text">Acct No: <span class="green">2365890214</span></div>
+      <div class="header__avatar pointer">
+        <img src="../assets/images/user.svg" alt="user avatar" title="User">
+      </div>
+    </header>
+
+    <aside class="sidenav" id="sidenav">
+      <div class="sidenav__close-icon">
+        <i class="fas fa-times sidenav__brand-close" id="sidenav__brand-close"></i>
+      </div>
+
+      <div class="bg-blue fixed-header">
+        <nav>
+          <a href="#" class="brand-logo p-t-s">Ban<span class="green">Ka</span></a>
+        </nav>
+      </div>
+
+      <ul class="sidenav__list">
+        <a href="#">
+          <li class="sidenav__list-item list__item-active">Overview</li>
+        </a>
+
+        <a href="./profile.html">
+          <li class="sidenav__list-item">My Profile</li>
+        </a>
+
+        <a href="../views/login.html">
+          <li class="sidenav__list-item">Log Out</li>
+        </a>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="main-header">
+        <div class="main-header__intro-wrapper">
+          <div class="main-header__welcome">
+            <div class="main-header__welcome-title text-light">
+              Welcome, <strong>Vincent</strong>
+            </div>
+            <div class="main-header__welcome-subtitle text-light">
+              How are you today?
+            </div>
+          </div>
+          <div class="quickview">
+            <div class="quickview__item">
+              <div class="quickview__item-total" id="date">data</div>
+              <div class="quickview__item-description">
+                <i class="far fa-calendar-alt"></i>
+                <span class="text-light" id="month">Month</span>
+              </div>
+            </div>
+            <div class="quickview__item">
+              <div class="quickview__item-total">&#8358;10,000</div>
+              <div class="quickview__item-description">
+                <i class="far fa-money-bill-alt"></i>
+                <span class="text-light">Balance</span>
+              </div>
+            </div>
+            <div class="quickview__item">
+              <div class="quickview__item-total">33&deg;</div>
+              <div class="quickview__item-description">
+                <i class="fas fa-map-marker-alt"></i>
+                <span class="text-light">Lagos</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="main-cards">
+        <!-- Credit Transactions -->
+        <div class="card bg-green">
+          <div class="card__item">
+            <span class="blue float-left s-text">27-Mar-2019</span>
+            <span class="green float-right s-text"> &#8358;5000.00</span>
+            <p class="black text-center">
+              Desc: Transfer Between Customers
+            </p>
+          </div>
+          <div class="card__item">
+            <span class="blue float-left s-text">27-Mar-2019</span>
+            <span class="green float-right s-text"> &#8358;5000.00</span>
+            <p class="black text-center">
+              Desc: Transfer Between Customers
+            </p>
+          </div>
+        </div>
+
+        <!-- Debit Transactions -->
+        <div class="card">
+          <div class="card__item">
+            <span class="blue float-left s-text">27-Mar-2019</span>
+            <span class="red float-right s-text"> &#8358;-500.00</span>
+            <p class="black text-center">
+              Desc: NIBSS Instant Payment Outward
+            </p>
+          </div>
+          <div class="card__item">
+            <span class="blue float-left s-text">27-Mar-2019</span>
+            <span class="red float-right s-text"> &#8358;-1000.00</span>
+            <p class="black text-center">
+              Desc: Airtime Purchase E-Trans
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer white">
+      <div class="footer__copyright">&copy; 2019 Banka</div>
+      <div class="footer__signature">
+        <a href="https://andela.com/" target="_blank" class="green">Andela </a>Bootcamp
+      </div>
+    </footer>
+    </div>
+</body>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</html>
