@@ -1,0 +1,206 @@
+:root {
+  --main-bg-color: #F6F6F6;
+  --color-blue: #0E237E;
+  --color-white: #fff;
+  --color-green: #78B945;
+  --color-black: #000;
+  --color-red: rgb(245, 6, 6);
+  --color-light-green: #b3d431;
+  --color-fiord: rgb(8, 94, 122);
+  --color-dim-blue: #0E237E;
+  --text-center: center;
+  --display-block: block;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh;
+  font-size: 1rem;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Util classes */
+
+.zero-sides {
+  margin: 0;
+  padding: 0;
+}
+
+.brand-logo {
+  color: var(--color-white);
+  font-size: 2rem;
+  margin-left: 50px;
+  float: left;
+}
+
+/* background / colors */
+.black {
+  color: var(--color-black);
+}
+
+.green {
+  color: var(--color-green);
+}
+
+.red {
+  color: var(--color-red);
+}
+
+.blue {
+  color: var(--color-blue);
+}
+
+.white {
+  color: var(--color-white);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.main-bg {
+  background-color: var(--main-bg-color);
+}
+
+.bg-blue {
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.bg-green {
+  background-color: var(--color-green);
+  color: var(--color-white);
+}
+
+
+/* buttons */
+.btn-blue:hover {
+  background: var(--color-blue);
+  cursor: pointer;
+}
+
+.btn-green:hover {
+  background: var(--color-green);
+  cursor: pointer;
+}
+
+.hover-blue:hover {
+  color: var(--color-blue);
+  cursor: pointer;
+}
+
+.hover-white:hover {
+  color: var(--color-white);
+  cursor: pointer;
+}
+
+/* displays */
+.text-center {
+  text-align: var(--text-center);
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+.dis-block {
+  display: var(--display-block);
+  margin: 10px;
+}
+
+.s-text {
+  font-size: 12px;
+}
+
+.m-text {
+  font-size: 14px;
+}
+
+.m-t {
+  margin-top: 12px;
+}
+
+.m-b {
+  margin-bottom: 12px;
+}
+
+.m-large {
+  margin: 50px;
+}
+
+.m-t-large {
+  margin-top: 50px;
+}
+
+.m-right {
+  margin-right: 50px;
+}
+
+.m-left {
+  margin-left: 50px;
+}
+
+.p-t {
+  padding-top: 12px;
+}
+
+.p-t-s {
+  padding-top: 5px;
+}
+
+.p-b-large {
+  padding-bottom: 50px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.b-radius {
+  border-radius: 50px;
+}
+
+.sticky-footer {
+  height: 10rem;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+}
+
+.w-full {
+  width: 100%;
+}
