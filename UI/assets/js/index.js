@@ -3,8 +3,15 @@ const menuIconEl = $('.menu-icon');
 const sidenavEl = $('.sidenav');
 const sidenavCloseEl = $('.sidenav__close-icon');
 
+// Show credit / debit div
+$('.toggle').click(() => {
+  $('#target').toggle('slow');
+});
+
+
+
 // Add and remove provided class names
-function toggleClassName(el, className) {
+const toggleClassName = (el, className) => {
   if (el.hasClass(className)) {
     el.removeClass(className);
   } else {
@@ -13,12 +20,12 @@ function toggleClassName(el, className) {
 }
 
 // Open the side nav on click
-menuIconEl.on('click', function () {
+menuIconEl.on('click', () => {
   toggleClassName(sidenavEl, 'active');
 });
 
 // Close the side nav on click
-sidenavCloseEl.on('click', function () {
+sidenavCloseEl.on('click', () => {
   toggleClassName(sidenavEl, 'active');
 });
 
