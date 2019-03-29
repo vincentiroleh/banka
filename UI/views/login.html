@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banka -Login / Open Account</title>
+  <link rel="stylesheet" href="../assets/css/style.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body class="main-bg theme-home">
+  <header class="bg-blue fixed-header">
+    <nav>
+      <a href="../index.html" class="brand-logo">Ban<span class="green">Ka</span></a>
+    </nav>
+  </header>
+
+  <main class="card-col-1">
+    <section class="sign-form blue">
+      <input type='checkbox' id='form-switch'>
+      <form id='login-form' action="./dashboard.html" class="">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit" class="form-button bg-blue btn-green">Login</button>
+
+          <label for='form-switch' class="s-text pointer"> New to Banka? <span class="bg-green btn-blue">Open
+              Account » </span></label>
+        </div>
+      </form>
+
+      <form id='register-form' action="./dashboard.html">
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder=" Enter Email" name="email" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="password" required>
+
+          <label for="password"><b>Confirm Password</b></label>
+          <input type="password" placeholder="Re Password" name="password" required>
+
+          <button type='submit' class="form-button bg-blue btn-green">Open Account</button>
+          <label for='form-switch' class="s-text pointer">Already a customer? <span class="bg-green btn-blue">Login
+              Now » </span></label>
+        </div>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>

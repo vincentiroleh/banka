@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Banka -Admin Dashboard</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars header__menu"></i>
+    </div>
+
+    <header class="header">
+      <div class="header__search">
+        <input class="header__input" placeholder="Search..." />
+      </div>
+      <div class="header__avatar pointer">
+        <img src="../assets/images/user.svg" alt="user avatar" title="Admin">
+      </div>
+    </header>
+
+    <aside class="sidenav" id="sidenav">
+      <div class="sidenav__close-icon">
+        <i class="fas fa-times sidenav__brand-close" id="sidenav__brand-close"></i>
+      </div>
+
+      <div class="bg-blue fixed-header">
+        <nav>
+          <a href="#" class="brand-logo p-t-s">Ban<span class="green">Ka</span></a>
+        </nav>
+      </div>
+
+      <ul class="sidenav__list">
+        <a href="./admin.html">
+          <li class="sidenav__list-item">Overview</li>
+        </a>
+
+        <a href="./create.html">
+          <li class="sidenav__list-item list__item-active">Create Admin/Staff</li>
+        </a>
+
+        <a href="../admin.html">
+          <li class="sidenav__list-item">Log Out</li>
+        </a>
+      </ul>
+    </aside>
+
+    <main class="main">
+
+      <div class="main-cards">
+        <!-- Admin Account Details -->
+        <div class="card">
+          <div class="card__item">
+            <h4 class="text-center text-bold blue text-uppercase">Create Admin Account</h4>
+            <form action="#">
+              <div class="black">
+                <div class="m-t">
+                  <label for="userName" class="p-b blue"><b>User Name</b></label>
+                  <input type="text" placeholder="Enter Admin userName" name="userName" class="w-full">
+                </div>
+
+                <div class="m-t">
+                  <label for="email" class="p-b blue"><b>Email</b></label>
+                  <input type="email" placeholder="Enter Admin email" name="email" class="w-full">
+                </div>
+
+
+                <div class="m-t">
+                  <label for="password" class="p-b blue"><b>Password</b></label>
+                  <input type="text" placeholder="Enter Admin password" name="password" class="w-full">
+                </div>
+
+                <div class="m-t">
+                  <label for="password" class="p-b blue"><b>Confirm Password</b></label>
+                  <input type="text" placeholder="Confirm password" name="password" class="w-full" required>
+                </div>
+
+                <div class="m-t">
+                  <button type='submit' class="form-button bg-blue btn-green w-full">Create</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <!-- Staff Profile Details -->
+        <div class="card">
+          <div class="card__item">
+            <h4 class="text-center text-bold blue text-uppercase">Create Staff Account</h4>
+            <form action="#">
+              <div class="black">
+                <div class="m-t">
+                  <label for="userName" class="p-b blue"><b>User Name</b></label>
+                  <input type="text" placeholder="Enter Staff userName" name="userName" class="w-full">
+                </div>
+
+                <div class="m-t">
+                  <label for="email" class="p-b blue"><b>Email</b></label>
+                  <input type="email" placeholder="Enter staff email" name="email" class="w-full">
+                </div>
+
+
+                <div class="m-t">
+                  <label for="password" class="p-b blue"><b>Password</b></label>
+                  <input type="text" placeholder="Enter Staff password" name="password" class="w-full">
+                </div>
+
+                <div class="m-t">
+                  <label for="password" class="p-b blue"><b>Confirm Password</b></label>
+                  <input type="text" placeholder="Confirm password" name="password" class="w-full" required>
+                </div>
+
+                <div class="m-t">
+                  <button type='submit' class="form-button bg-blue btn-green w-full">Create</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer white">
+      <div class="footer__copyright">&copy; 2019 Banka</div>
+      <div class="footer__signature">
+        <a href="https://andela.com/" target="_blank" class="green">Andela </a>Bootcamp
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</html>
