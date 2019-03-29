@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Banka -Admin Dashboard</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../assets/css/dashboard.css" />
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars header__menu"></i>
+    </div>
+
+    <header class="header">
+      <div class="header__search">
+        <input class="header__input" placeholder="Search..." />
+      </div>
+      <div class="header__avatar pointer">
+        <img src="../assets/images/user.svg" alt="user avatar" title="Admin">
+      </div>
+    </header>
+
+    <aside class="sidenav" id="sidenav">
+      <div class="sidenav__close-icon">
+        <i class="fas fa-times sidenav__brand-close" id="sidenav__brand-close"></i>
+      </div>
+
+      <div class="bg-blue fixed-header">
+        <nav>
+          <a href="#" class="brand-logo p-t-s">Ban<span class="green">Ka</span></a>
+        </nav>
+      </div>
+
+      <ul class="sidenav__list">
+        <a href="./admin.html">
+          <li class="sidenav__list-item list__item-active">Overview</li>
+        </a>
+
+        <a href="./create.html">
+          <li class="sidenav__list-item">Create Admin/Staff</li>
+        </a>
+
+        <a href="../admin.html">
+          <li class="sidenav__list-item">Log Out</li>
+        </a>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <div class="main-cards">
+        <!-- Customers Accounts 1 -->
+        <div class="card">
+          <div class="card__item hover-milk">
+            <span class="float-left green text-bold s-text" title="Account Number">xxxxxxxxxx</span>
+            <span class="float-right fas fa-trash-alt red " title="delete this account"></span>
+
+            <div class="black s-text m-t p-t">
+              <label for="Account Name" class="text-bold blue p-right">Full Name:</label>
+              <span>Vincent Iroleh</span> <br>
+
+              <label for="Account Type" class="text-bold blue p-right">Acct Type:</label>
+              <span>Savings</span> <br>
+
+              <label for="balance" class="text-bold blue p-right">Balance:</label>
+              <span>&#8358;1000000.00</span> <br>
+            </div>
+
+            <label class="switch float-right" title="activate or deactivate account">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="card__item hover-milk">
+            <span class="float-left green text-bold s-text" title="Account Number">xxxxxxxxxx</span>
+            <span class="float-right fas fa-trash-alt red " title="delete this account"></span>
+
+            <div class="black s-text m-t p-t">
+              <label for="Account Name" class="text-bold blue p-right">Full Name:</label>
+              <span>Full Name</span> <br>
+
+              <label for="Account Type" class="text-bold blue p-right">Acct Type:</label>
+              <span>Savings</span> <br>
+
+              <label for="balance" class="text-bold blue p-right">Balance:</label>
+              <span>&#8358;50000.00</span> <br>
+            </div>
+
+            <label class="switch float-right" title="activate or deactivate account">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Customers Accounts 2 -->
+        <div class="card">
+          <div class="card__item hover-milk">
+            <span class="float-left green text-bold s-text" title="Account Number">xxxxxxxxxx</span>
+            <span class="float-right fas fa-trash-alt red " title="delete this account"></span>
+
+            <div class="black s-text m-t p-t">
+              <label for="Account Name" class="text-bold blue p-right">Full Name:</label>
+              <span>Full Name</span> <br>
+
+              <label for="Account Type" class="text-bold blue p-right">Acct Type:</label>
+              <span>Savings</span> <br>
+
+              <label for="balance" class="text-bold blue p-right">Balance:</label>
+              <span>&#8358;4000.00</span> <br>
+            </div>
+
+            <label class="switch float-right" title="activate or deactivate account">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="card__item hover-milk">
+            <span class="float-left green text-bold s-text" title="Account Number">xxxxxxxxxx</span>
+            <span class="float-right fas fa-trash-alt red " title="delete this account"></span>
+
+            <div class="black s-text m-t p-t">
+              <label for="Account Name" class="text-bold blue p-right">Full Name:</label>
+              <span>Full Name</span> <br>
+
+              <label for="Account Type" class="text-bold blue p-right">Acct Type:</label>
+              <span>Current</span> <br>
+
+              <label for="balance" class="text-bold blue p-right">Balance:</label>
+              <span>&#8358;8000.00</span> <br>
+            </div>
+
+            <label class="switch float-right" title="activate or deactivate account">
+              <input type="checkbox" checked>
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer white">
+      <div class="footer__copyright">&copy; 2019 Banka</div>
+      <div class="footer__signature">
+        <a href="https://andela.com/" target="_blank" class="green">Andela </a>Bootcamp
+      </div>
+    </footer>
+  </div>
+</body>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/index.js"></script>
+
+</html>
