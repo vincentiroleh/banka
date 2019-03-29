@@ -162,6 +162,7 @@ button {
   margin: 50px;
 }
 
+
 .m-t-large {
   margin-top: 50px;
 }
@@ -176,6 +177,10 @@ button {
 
 .p-t {
   padding-top: 12px;
+}
+
+.p-b {
+  padding-bottom: 12px;
 }
 
 .p-t-s {
@@ -203,4 +208,8 @@ button {
 
 .w-full {
   width: 100%;
+}
+
+.full-height {
+  height: 100vh;
 }
