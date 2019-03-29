@@ -8,6 +8,7 @@
   --color-light-green: #b3d431;
   --color-fiord: rgb(8, 94, 122);
   --color-dim-blue: #0E237E;
+  --color-lightgoldenrodyellow: lightgoldenrodyellow;
   --text-center: center;
   --display-block: block;
 
@@ -106,6 +107,10 @@ button {
   color: var(--color-white);
 }
 
+.hover-milk:hover {
+  background-color: var(--color-lightgoldenrodyellow);
+}
+
 
 /* buttons */
 .btn-blue:hover {
@@ -133,6 +138,10 @@ button {
   text-align: var(--text-center);
 }
 
+.text-uppercase {
+  text-transform: uppercase;
+}
+
 .float-right {
   float: right;
 }
@@ -143,6 +152,11 @@ button {
 
 .dis-block {
   display: var(--display-block);
+  margin: 10px;
+}
+
+.dis-inline-b {
+  display: inline-block;
   margin: 10px;
 }
 
@@ -183,6 +197,14 @@ button {
   padding-top: 12px;
 }
 
+.p-right {
+  padding-right: 10px;
+}
+
+.p-left {
+  padding-left: 14px;
+}
+
 .p-b {
   padding-bottom: 12px;
 }
@@ -203,6 +225,10 @@ button {
   border-radius: 50px;
 }
 
+.border {
+  border: #000 solid 1px;
+}
+
 .sticky-footer {
   height: 10rem;
   width: 100%;
@@ -216,4 +242,16 @@ button {
 
 .full-height {
   height: 100vh;
+}
+
+.dis-none {
+  display: none;
+}
+
+.dis-visible {
+  display: block;
+}
+
+.ul-style-none {
+  list-style: none;
 }
