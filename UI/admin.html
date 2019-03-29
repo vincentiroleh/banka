@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Banka - Admin / Staff Login</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="shortcut icon" href="./assets/images/favicon.png" />
+</head>
+
+<body class="main-bg theme-home">
+  <header class="bg-blue fixed-header">
+    <nav>
+      <a href="#" class="brand-logo">Ban<span class="green">Ka</span></a>
+    </nav>
+  </header>
+
+  <main class="card-col-1">
+    <section class="sign-form blue">
+      <input type='checkbox' id='form-switch'>
+      <form id='login-form' action="./views/admin.html" class="">
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder=" Enter Email" name="email" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="password" required>
+
+          <button type="submit" class="form-button bg-blue btn-green"> Admin Login</button>
+
+          <label for='form-switch' class="s-text pointer"> Not Admin? <span class="bg-green btn-blue">Staff Login »
+            </span></label>
+        </div>
+      </form>
+
+      <form id='register-form' action="./views/staff.html">
+        <div class="container">
+          <label for="email"><b>Email</b></label>
+          <input type="email" placeholder=" Enter Email" name="email" required>
+
+          <label for="password"><b>Password</b></label>
+          <input type="password" placeholder="Password" name="password" required>
+
+          <button type='submit' class="form-button bg-blue btn-green"> Staff Login</button>
+          <label for='form-switch' class="s-text pointer">Not a staff? <span class="bg-green btn-blue">Admin Login »
+            </span></label>
+        </div>
+      </form>
+    </section>
+  </main>
+
+</body>
+
+</html>
