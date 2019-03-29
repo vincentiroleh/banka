@@ -92,6 +92,10 @@ button {
   background-color: var(--main-bg-color);
 }
 
+.bg-black {
+  background-color: var(--color-black);
+}
+
 .bg-blue {
   background-color: var(--color-blue);
   color: var(--color-white);
