@@ -1,6 +1,8 @@
 # [Banka](https://vincentiroleh.github.io/banka/UI/)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5ac077b418b14314c51/maintainability)](https://codeclimate.com/github/vincentiroleh/banka/maintainability)
+[![codebeat badge](https://codebeat.co/badges/ac253d49-d8d7-43f9-aa14-ec8a062e1e0c)](https://codebeat.co/projects/github-com-vincentiroleh-banka-develop)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/)    
 [![HitCount](http://hits.dwyl.io/vincentiroleh/banka.svg)](http://hits.dwyl.io/vincentiroleh/banka)
 
 [Banka](https://vincentiroleh.github.io/banka/UI/) is a light-weight core banking application
