@@ -1,6 +1,7 @@
 # [Banka](https://vincentiroleh.github.io/banka/UI/)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5ac077b418b14314c51/maintainability)](https://codeclimate.com/github/vincentiroleh/banka/maintainability)
+[![HitCount](http://hits.dwyl.io/vincentiroleh/banka.svg)](http://hits.dwyl.io/vincentiroleh/banka)
 
 [Banka](https://vincentiroleh.github.io/banka/UI/) is a light-weight core banking application
 that powers banking operations like account creation, customer deposit and withdrawals.
