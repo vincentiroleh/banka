@@ -1,6 +1,8 @@
 # [Banka](https://vincentiroleh.github.io/banka/UI/)
-
+[![Build Status](https://travis-ci.org/vincentiroleh/banka.svg?branch=develop)](https://travis-ci.org/vincentiroleh/banka)
 [![Maintainability](https://api.codeclimate.com/v1/badges/c5ac077b418b14314c51/maintainability)](https://codeclimate.com/github/vincentiroleh/banka/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/c5ac077b418b14314c51/test_coverage)](https://codeclimate.com/github/vincentiroleh/banka/test_coverage)
+[![Coverage Status](https://coveralls.io/repos/github/vincentiroleh/banka/badge.svg?branch=develop)](https://coveralls.io/github/vincentiroleh/banka?branch=develop)
 [![codebeat badge](https://codebeat.co/badges/ac253d49-d8d7-43f9-aa14-ec8a062e1e0c)](https://codebeat.co/projects/github-com-vincentiroleh-banka-develop)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badge/) [![HitCount](http://hits.dwyl.io/vincentiroleh/banka.svg)](http://hits.dwyl.io/vincentiroleh/banka)
 
