@@ -4,7 +4,9 @@
   "description": "Banka is a light-weight core banking application",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:dev": "nodemon --exec babel-node server/",
+    "build": "babel src --out-dir build",
+    "test": "nyc mocha --require @babel/register --exit || true"
   },
   "repository": {
     "type": "git",
@@ -12,10 +14,10 @@
   },
   "keywords": [
     "banking",
-    "lght-weight",
+    "light-weight",
     "app",
     "nodejs",
-    "expressjs",
+    "expressJS",
     "mocha",
     "chai"
   ],
@@ -26,6 +28,7 @@
   },
   "homepage": "https://github.com/vincentiroleh/banka#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
     "@babel/core": "^7.4.0",
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.2",
@@ -33,11 +36,17 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0",
-    "nodemon": "^1.18.10"
+    "nodemon": "^1.18.10",
+    "nyc": "^13.3.0"
   },
   "dependencies": {
+    "body-parser": "^1.18.3",
     "chai": "^4.2.0",
     "chai-http": "^4.2.1",
-    "mocha": "^6.0.2"
+    "dotenv": "^7.0.0",
+    "express": "^4.16.4",
+    "mocha": "^6.0.2",
+    "moment": "^2.24.0",
+    "morgan": "^1.9.1"
   }
 }
