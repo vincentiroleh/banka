@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon --exec babel-node server/",
     "build": "babel src --out-dir build",
-    "test": "nyc mocha --require @babel/register --watch --exit || true",
+    "test": "nyc mocha --require @babel/register --exit || true",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
