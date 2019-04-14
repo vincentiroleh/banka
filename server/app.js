@@ -2,6 +2,7 @@
 import express from 'express';
 import logger from 'morgan';
 import bodyParser from 'body-parser';
+import routes from './routes/index';
 
 // Initialized express
 const app = express();
@@ -12,10 +13,21 @@ app.use(logger('dev'));
 // Setup body-parser
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
-  extended: true,
+  extended: false,
 }));
 
-// Setup a default catch-all route that sends back a welcome message in JSON format.
-app.get('/', (req, res) => res.status(200).send('Welcome to banka'));
+// Router
+app.use(routes);
+
+/**
+ * @param  {string} route The index url
+ * @param  {function}
+ * @param  {string} success message
+ */
+app.get('/', (req, res) => {
+  res.status(200).send({
+    message: 'Welcome to Banka',
+  });
+});
 
 export default app;
