@@ -9,11 +9,11 @@ import app from '../server/app';
 
 chai.use(chaiHttp);
 
-describe('USER CONTROLLER', () => {
+describe('AUTHENTICTION TEST', () => {
+  const signupURL = '/api/v1/auth/signup';
+  const signinURL = '/api/v1/auth/signin';
   //  Test the POST /auth/signup endpoint
-  describe('signup authentication', () => {
-    const signupURL = '/api/v1/auth/signup';
-
+  describe('SIGNUP AUTHENTICTION', () => {
     it('should register a new user when all the parameters are given', (done) => {
       const user = {
         id: User.length + 1,
@@ -29,7 +29,6 @@ describe('USER CONTROLLER', () => {
           expect(response.body).to.be.an('object');
           expect(response).to.have.status(201);
           expect(response.body.status).to.equal(201);
-          expect(response.body.data).to.be.a('object');
           expect(response.body).to.be.an('object');
           expect(response.body.data.token).to.be.a('string');
           done(error);
@@ -50,6 +49,24 @@ describe('USER CONTROLLER', () => {
           expect(response.body.status).to.equal(400);
           expect(response.body.error).to.be.a('string');
           expect(response.body.error).to.equal('Email is required');
+          done(error);
+        });
+    });
+    it('should not register a user with a wrong email format', (done) => {
+      const user = {
+        firstName: 'First Name',
+        lastName: 'Last Name',
+        email: 'badEmailFormat.com',
+        password: 'password',
+      };
+      chai.request(app)
+        .post(signupURL)
+        .send(user)
+        .end((error, response) => {
+          expect(response.body).to.be.an('object');
+          expect(response.body.status).to.equal(400);
+          expect(response.body.error).to.be.a('string');
+          expect(response.body.error).to.equal('Invalid Email address');
           done(error);
         });
     });
@@ -111,4 +128,72 @@ describe('USER CONTROLLER', () => {
   });
 
   //  Test the POST /auth/signin endpoint
+  describe('SIGNIN AUTHENTICTION', () => {
+    it('should signin a user with email and password', (done) => {
+      const user = {
+        email: 'iroleh@gmail.com',
+        password: '12345678',
+      };
+      chai.request(app)
+        .post(signinURL)
+        .send(user)
+        .end((error, response) => {
+          expect(response.body).to.be.an('object');
+          expect(response).to.have.status(200);
+          expect(response.body.status).to.equal(200);
+          expect(response.body).to.be.an('object');
+          expect(response.body.data.token).to.be.a('string');
+          done(error);
+        });
+    });
+    it('should not signin a user without email and password', (done) => {
+      const user = {
+        email: null,
+        password: null,
+      };
+      chai.request(app)
+        .post(signinURL)
+        .send(user)
+        .end((error, response) => {
+          expect(response.body).to.be.an('object');
+          expect(response).to.have.status(400);
+          expect(response.body.status).to.equal(400);
+          expect(response.body).to.be.an('object');
+          expect(response.body.error).to.be.equal('Email and password is required');
+          done(error);
+        });
+    });
+    it('should not signin a user with a wrong email format', (done) => {
+      const user = {
+        email: 'badEmailFormat.com',
+        password: '12345678',
+      };
+      chai.request(app)
+        .post(signinURL)
+        .send(user)
+        .end((error, response) => {
+          expect(response.body).to.be.an('object');
+          expect(response.body.status).to.equal(400);
+          expect(response.body.error).to.be.a('string');
+          expect(response.body.error).to.equal('Invalid Email address');
+          done(error);
+        });
+    });
+    it('should not signin a user with a wrong credentials', (done) => {
+      const user = {
+        email: 'email@email.com',
+        password: 'password',
+      };
+      chai.request(app)
+        .post(signinURL)
+        .send(user)
+        .end((error, response) => {
+          expect(response.body).to.be.an('object');
+          expect(response.body.status).to.equal(401);
+          expect(response.body.error).to.be.a('string');
+          expect(response.body.error).to.equal('Invalid credentials. Check your email or password');
+          done(error);
+        });
+    });
+  });
 });

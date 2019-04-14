@@ -6,7 +6,7 @@
   "scripts": {
     "start:dev": "nodemon --exec babel-node server/",
     "build": "babel src --out-dir build",
-    "test": "nyc mocha --require @babel/register --watch --exit || true",
+    "test": "nyc mocha --require @babel/register --exit || true",
     "generate-lcov": "nyc report --reporter=text-lcov > lcov.info",
     "coveralls-coverage": "coveralls < lcov.info",
     "codeclimate-coverage": "codeclimate-test-reporter < lcov.info",
@@ -56,6 +56,7 @@
     "express": "^4.16.4",
     "jsonwebtoken": "^8.5.1",
     "mocha": "^6.0.2",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "validator": "^10.11.0"
   }
 }
