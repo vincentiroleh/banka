@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 import dotenv from 'dotenv';
+import validator from 'validator';
 
 dotenv.config();
 
@@ -32,6 +33,11 @@ class Auth {
   static verifyToken(token) {
     const decoded = jwt.verify(token, SecretKey);
     return decoded;
+  }
+
+  // verify valid email
+  static checkEmail(email) {
+    return validator.isEmail(email);
   }
 }
 export default Auth;
