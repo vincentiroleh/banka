@@ -24,15 +24,34 @@ class Auth {
       userId: id,
     },
     SecretKey, {
-      expiresIn: '7d',
+      expiresIn: '1hr',
     });
     return token;
   }
 
   // verify token
-  static verifyToken(token) {
-    const decoded = jwt.verify(token, SecretKey);
-    return decoded;
+  static verifyToken(req, res, next) {
+    // check header or url parms for access token
+    const token = req.headers['x-access-token'];
+    if (!token) {
+      return res.status(403).send({
+        auth: false,
+        error: 'No token provided.',
+      });
+    }
+    // verify the token and expire
+    jwt.verify(token, SecretKey, (err, decoded) => {
+      if (err) {
+        return res.status(500).send({
+          auth: false,
+          message: 'Failed to authenticate token.',
+        });
+      }
+      // req.userId = decoded.id;
+      req.user = { id: decoded.userId };
+      // return res.status(200).send(decoded);
+    });
+    next();
   }
 
   // verify valid email
