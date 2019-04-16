@@ -1,6 +1,6 @@
 import dateTime from 'date-time';
 import Auth from '../auth/auth';
-import User from '../models/user.model';
+import User from '../models/userModel';
 
 class UserController {
   // ===================== signup authentication =====================
