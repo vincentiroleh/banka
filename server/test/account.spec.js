@@ -2,8 +2,6 @@ import chaiHttp from 'chai-http';
 import chai, {
   expect,
 } from 'chai';
-
-import auth from '../auth/auth';
 import app from '../app';
 
 chai.use(chaiHttp);
@@ -11,14 +9,13 @@ chai.use(chaiHttp);
 describe('ACCOUNT CONTROLLER TEST', () => {
   const createAccountURL = '/api/v1/accounts';
   describe('Creating Account', () => {
-
     it('should register user', (done) => {
       const data = {
         accountNumber: 1234567896,
         createdOn: Number,
         type: 'savings',
         openingBalance: 10000,
-      }
+      };
       chai.request(app)
         .post(createAccountURL)
         .send(data)
@@ -32,7 +29,7 @@ describe('ACCOUNT CONTROLLER TEST', () => {
     it('should not register user without type of account', (done) => {
       const data = {
         openingBalance: 10000,
-      }
+      };
       chai.request(app)
         .post(createAccountURL)
         .send(data)
@@ -46,7 +43,7 @@ describe('ACCOUNT CONTROLLER TEST', () => {
     it('should not register user without opening balance', (done) => {
       const data = {
         type: 'savings',
-      }
+      };
       chai.request(app)
         .post(createAccountURL)
         .send(data)
