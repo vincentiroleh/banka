@@ -2,11 +2,9 @@
 import dateTime from 'date-time';
 import faker from 'faker';
 
-const accountNumber = faker.finance.account(10);
-
 const Accounts = [{
   id: 1,
-  accountNumber,
+  accountNumber: 234543456,
   createdOn: dateTime(),
   firstName: 'firstName',
   lastName: 'lastName',
