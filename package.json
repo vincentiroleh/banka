@@ -53,7 +53,7 @@
     "chai-http": "^4.2.1",
     "date-time": "^3.1.0",
     "dotenv": "^7.0.0",
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "faker": "^4.1.0",
     "jsonwebtoken": "^8.5.1",
     "mocha": "^6.0.2",
