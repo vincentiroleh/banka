@@ -55,7 +55,7 @@
     "dotenv": "^7.0.0",
     "express": "^4.16.4",
     "faker": "^4.1.0",
-    "jsonwebtoken": "^8.5.1",
+    "jsonwebtoken": "^9.0.0",
     "mocha": "^6.0.2",
     "morgan": "^1.9.1",
     "validator": "^10.11.0"
